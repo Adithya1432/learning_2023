@@ -23,4 +23,5 @@ int main()
         printf("%d and %d are same values", a,b);
     }
     
+    return 0;
 }
