@@ -1,26 +1,43 @@
-#include<stdio.h>
+#include <stdio.h>
 
-void main()
-{
-    int num1, num2;
-    char a;
+int main() {
+    int operand1, operand2, result;
+    char operator;
 
-    printf("Enter the operator ");
-    scanf("%c", &a);
+    printf("Enter operand1: ");
+    scanf("%d", &operand1);
 
-    printf("Enter Number1:");
-    scanf("%d", &num1);
+    printf("Enter the operator: ");
+    scanf(" %c", &operator);
 
-    printf("Enter Number2:");
-    scanf("%d", &num2);
+    printf("Enter operand2: ");
+    scanf("%d", &operand2);
 
-    switch(a)
-  {
-  case '+' : printf("Result : %d ",num1+num2);break;
-  case '-' : printf("Result : %d ",num1-num2);break;
-  case '*' : printf("Result : %d ",num1*num2);break;
-  case '/' : printf("Result : %d ",num1/num2);break;
-  default  : printf("Invalid operator....");
-  }
-    
+    switch (operator) {
+        case '+':
+            result = operand1 + operand2;
+            printf("Result: %d\n", result);
+            break;
+        case '-':
+            result = operand1 - operand2;
+            printf("Result: %d\n", result);
+            break;
+        case '*':
+            result = operand1 * operand2;
+            printf("Result: %d\n", result);
+            break;
+        case '/':
+            if (operand2 != 0) {
+                result = operand1 / operand2;
+                printf("Result: %d\n", result);
+            } else {
+                printf("Error: Division by zero is not allowed.\n");
+            }
+            break;
+        default:
+            printf("Error: Invalid operator.\n");
+            break;
+    }
+
+  return 0;
 }
