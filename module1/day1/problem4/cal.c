@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<conio.h>
+
 void main()
 {
     int num1, num2;
@@ -22,5 +22,5 @@ void main()
   case '/' : printf("Result : %d ",num1/num2);break;
   default  : printf("Invalid operator....");
   }
-    getch();
+    
 }
