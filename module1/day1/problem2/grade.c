@@ -1,39 +1,28 @@
-#include<stdio.h>
-
-void main()
+#include <stdio.h>
+ 
+int main()
 {
     int marks;
-
-    printf("Enter marks : ");
-    scanf("%d", &marks);
-    
-    if(marks>=90 && marks<=100)
+    printf("Enter your marks ");
+    scanf("%d",&marks);
+     if(marks>=90 && marks<=100)
     {
-        printf("GRADE A");
+        printf("Grade A");
     }
-
-    else if(marks>=75 && marks<=89)
+    else if(marks>=75 && marks<90)
     {
-        printf("GRADE B");
+        printf("Grade B");
     }
-
-    else if(marks>=60 && marks<=74)
+    else if(marks>=60 && marks<75)
     {
-        printf("GRADE C");
+        printf("Grade C");
     }
-
-    else if(marks>=50 && marks<=59)
+    else if(marks>=50 && marks<60)
     {
-        printf("GRADE D");
+        printf("Grade D");
     }
-
-    else if(marks>=0 && marks<=49)
-    {
-        printf("GRADE F");
-    }
-
     else
     {
-        printf("Enter correct marks");
+        printf("Grade F");
     }
 }

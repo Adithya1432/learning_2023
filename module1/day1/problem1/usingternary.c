@@ -1,14 +1,12 @@
-#include<stdio.h>
-
+#include <stdio.h>
+ 
 int main()
 {
-    
-    int a, b;
-    
-    printf("Enter two numbers : ");
-    scanf("%d\n%d", &a, &b);
-
-    (a>b) ? printf("%d is greater",a):printf("%d is greater",b);
-
+    int n1,n2, max;
+     scanf("%d %d",&n1,&n2);
+     max = (n1 > n2) ? n1 : n2;
+    printf("Largest number between %d and %d is %d. ",
+                                         n1, n2, max);
+ 
     return 0;
 }
